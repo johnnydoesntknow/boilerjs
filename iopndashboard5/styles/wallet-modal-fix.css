@@ -1,0 +1,163 @@
+/* FORCE SOLID BLACK WALLET MODAL - NO TRANSPARENCY */
+
+/* Override ALL modal backgrounds to solid black */
+w3m-modal,
+w3m-router,
+[data-testid="w3m-modal"],
+[class*="w3m-modal"],
+[class*="w3m-router"],
+.w3m-overlay,
+.w3m-container,
+appkit-modal,
+appkit-router {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Force modal content to be solid black */
+w3m-modal > div,
+w3m-router > div,
+[data-testid="w3m-modal"] > div,
+w3m-modal-content,
+w3m-connecting-view,
+w3m-connect-view,
+w3m-wallet-login-list,
+appkit-modal > div,
+appkit-router > div {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Force all nested elements to be solid */
+w3m-modal * {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Override inline styles with !important */
+[style*="backdrop-filter"] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Force overlay to be solid black */
+.w3m-overlay,
+w3m-modal-overlay,
+[class*="overlay"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Ensure the main modal container is solid */
+w3m-modal .w3m-container,
+w3m-modal [class*="container"],
+appkit-modal .container {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  border: 1px solid rgba(0, 255, 255, 0.3) !important;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.3) !important;
+}
+
+/* Force header to be solid */
+w3m-modal-header,
+w3m-header,
+[class*="header"] {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  backdrop-filter: none !important;
+}
+
+/* Force all cards/buttons to have solid backgrounds */
+w3m-wallet-button,
+w3m-wallet-item,
+w3m-connect-button,
+[class*="wallet-button"],
+[class*="wallet-item"] {
+  background: rgba(20, 20, 20, 1) !important;
+  backdrop-filter: none !important;
+}
+
+/* Email input container */
+w3m-email-input,
+w3m-input-element,
+[class*="input"] {
+  background: #000000 !important;
+}
+
+/* Text should be white */
+w3m-modal,
+w3m-modal *,
+appkit-modal,
+appkit-modal * {
+  color: #ffffff !important;
+}
+
+/* Secondary text */
+w3m-text[variant="secondary"],
+[class*="secondary"] {
+  color: #a0a0a0 !important;
+}
+
+/* Social login buttons */
+w3m-social-login-widget button,
+[class*="social"] button {
+  background: rgba(30, 30, 30, 1) !important;
+  border: 1px solid rgba(0, 255, 255, 0.2) !important;
+}
+
+/* Force remove all glass/blur effects */
+* {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Override CSS variables to ensure solid colors */
+:root,
+w3m-modal,
+appkit-modal {
+  --w3m-background-color: #000000 !important;
+  --w3m-background-image-url: none !important;
+  --w3m-background-border-radius: 16px !important;
+  --w3m-container-border-radius: 16px !important;
+  --w3m-text-medium-regular-color: #ffffff !important;
+  --w3m-text-medium-regular-size: 14px !important;
+  --w3m-text-medium-regular-weight: 400 !important;
+  --w3m-overlay-background-color: rgba(0, 0, 0, 0.95) !important;
+  --w3m-overlay-backdrop-filter: none !important;
+}
+
+/* Additional overrides for AppKit modal */
+[data-w3m-modal],
+[data-appkit-modal] {
+  background: #000000 !important;
+  backdrop-filter: none !important;
+}
+
+/* Force the modal wrapper to be solid */
+body > w3m-modal,
+body > appkit-modal,
+body > [data-testid="w3m-modal"],
+#__next > w3m-modal,
+#__next > appkit-modal {
+  background: transparent !important;
+}
+
+body > w3m-modal > div,
+body > appkit-modal > div {
+  background: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: none !important;
+}
+
+/* The actual modal content box */
+w3m-modal > div > div,
+appkit-modal > div > div {
+  background: #000000 !important;
+  border: 1px solid rgba(0, 255, 255, 0.3) !important;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.3) !important;
+  backdrop-filter: none !important;
+}
